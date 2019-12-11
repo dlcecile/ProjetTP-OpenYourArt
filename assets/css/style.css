@@ -1,11 +1,8 @@
-/*Début header  */
-
-header{
-  background-color: #0B223B;
+.container-fluid{
+  background-color: red;
+  padding-left: 0;
+  padding-right: 0;
 }
-/* Fin header */
-
-
 /*Début Barre de Navigation  */
 .navbar {
   background: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
@@ -15,7 +12,14 @@ header{
   list-style-type: none;
   justify-content: space-around;
   max-height: 50px;
-  z-index: 1;
+  z-index: 999;
+  position: fixed;
+/*  Permet que la barre de navigation soit fixe lors du scroll*/
+   top:0;
+   left: 0;
+/* Pour la position fixe */
+   width: 100%;
+/* La barre à une largueur totale par rapport au container */
 }
 .nav-link {
   color: #0B223B;
@@ -31,7 +35,6 @@ header{
 nav a:hover{
   color:#0A5DBB;
 }
-
 /*Fin Barre de Navigation  */
 /* Début Jumbotron */
 .card-image{
@@ -40,61 +43,25 @@ nav a:hover{
 
 }
 /* Fin Jumbotron */
-/* Début card Les nouveautés */
-div {
-  display: inline-block;
-}
-#carrousel{
-   width: 100%;
-   height: auto;
-   overflow: hidden;
-   /*permet que le texte et les images de sortent pas du cadre  */
-  display: inline-block;
-  margin-bottom: 20px;
-}
- #carrousel ul{
-   width: 400%;
-   height: auto;
-   margin:0;
-   list-style: none;
-   padding: 1%;
-  background-color: grey;
-}
-#carrousel li {
-  max-width: 100%;
-  border: 1px solid black;
-  box-sizing: border-box;
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  padding: 0.5%;
-   background-color: white;
-}
 
 /* Fin card Les nouveautés */
-/* Début Footer */
-.backgroundFooter{
-  background: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f3e2c7 0%,#c19e67 0%,#b68d4c 80%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */;
-  width: 100%;
-  height: auto;
-}
- .partenairesFooter, .archivesFooter, .reseauxFooter, .contactFooter{
-  color:#0B223B;
-}
+/* Footer */
 footer{
-  font-size: 1.2rem;
+background-color:black;
+width: 100%;
 }
-.fb-ic{
-  color: #4267B2;
+#footerLine{
+  border-top: 1px solid white ;
+  width: 80%;
 }
-.tw-ic{
-   color: #1C9CEB;
+.customerServices{
+width: 100%;
+height: 150px;
+  /* background-color: #090B19; */
 }
-.li-ic{
-
+footer p{
+  font-size: 14px;
+  color: #E1E1E3;
 }
 
 /* Fin footer */

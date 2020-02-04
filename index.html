@@ -12,10 +12,20 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-  <div class="container-fluid">
-    <!-- Début header -->
-    <!--Fin Header  -->
-    <!-- Début de la NavBar-->
+  <header>
+    <div class="container-fluid header_container">
+      <div class="row header_row flex-column">
+        <div class="header_img d-flex justify-content-end">
+        <img src="assets/img/facebook.png" alt="facebook" class="responsive mr-1">
+        <img src="assets/img/instagram-sketched.png" alt="instagram" class="responsive mr-1">
+        <img src="assets/img/linkedin.png" alt="linkedin" class="responsive mr-1">
+        <img src="assets/img/twitter.png" alt="twitter" class="responsive mr-1 pr-4">
+        </div>
+      </div>
+    </div>
+<!-- Début de la NavBar-->
+  <div class="container-fluid navbar_container">
+    <div class="row">
     <nav class="navbar navbar-expand-md">
       <button class="navbar-toggler navbarItems" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fa fa-bars navbarItems p-0.5" aria-hidden="true"></i>
@@ -25,10 +35,34 @@
         <div class="nav-item"><a class="nav-link" href="#">Oeuvres</a></div>
         <div class="nav-item"><a class="nav-link " href="#">Artistes</a></div>
       </div>
+      </div>
+    </div>
     </nav>
     <!-- Fin Navbar-->
+  </header>
     <!-- Début jumbotron -->
-    <!-- Jumbotron -->
+    <div class="card card-image">
+      <div class="text-black text-center py-5 px-4">
+        <div class="py-5">
+          <!-- Content -->
+          <h1 class="card-title h2 my-4 py-2">OpenYourArt</h1>
+          <p class="mb-4 pb-2 px-md-5 mx-md-5">"La définition d’une oeuvre d’art ne saurait être autre que celle-ci : Une oeuvre d’art est un coin de la création vu à travers un tempérament.".</p>
+          <p class="mb-4 pb-2 px-md-5 mx-md-5">- Emile Zola -</p>
+          <p>OpenYourArt travaille avec les jeunes artistes Amiénois. Tous étudiants, leurs talents sera vous transportez vers votre passion : l'art</p>
+        </div>
+      </div>
+    </div>
+    <div class="card card-image">
+      <div class="text-black text-center py-5 px-4">
+        <div class="py-5">
+          <!-- Content -->
+          <h1 class="card-title h2 my-4 py-2">OpenYourArt</h1>
+          <p class="mb-4 pb-2 px-md-5 mx-md-5">"La définition d’une oeuvre d’art ne saurait être autre que celle-ci : Une oeuvre d’art est un coin de la création vu à travers un tempérament.".</p>
+          <p class="mb-4 pb-2 px-md-5 mx-md-5">- Emile Zola -</p>
+          <p>OpenYourArt travaille avec les jeunes artistes Amiénois. Tous étudiants, leurs talents sera vous transportez vers votre passion : l'art</p>
+        </div>
+      </div>
+    </div>
     <div class="card card-image">
       <div class="text-black text-center py-5 px-4">
         <div class="py-5">
@@ -48,21 +82,23 @@
     <!--Fin Street Galerie  -->
     <!-- Début Footer -->
     <footer>
-      <div class=" row flex-wrap justify-content-around align-content-center customerServices">
-          <p class="service">Service clients</p>
-          <p class="aboutUs">Nous sommes</p>
-          <p class="student">Etudiant d'Amiens ?</p>
-        <div id="footerLine" class="col-11"></div>
-        <div class="flex-row mt-3 justify-content-center">
-          <i class="fa fa-facebook-square text-warning col-2" aria-hidden="true"></i>
-          <i class="fa fa-linkedin text-warning col-2" aria-hidden="true"></i>
-          <i class="fa fa-instagram text-warning col-2" aria-hidden="true"></i>
-          <i class="fa fa-twitter text-warning col-2" aria-hidden="true"></i>
-        </div>
+      <div class="container-fluid footer_container">
+        <div class="row footer_row flex-column">
+      <div class="references d-flex flex-row justify-content-center">
+          <p class="service col-3 mt-2">Mentions légales</p>
+          <p class="aboutUs col-3 mr-2 ml-2 mt-2">Nous sommes</p>
+          <p class="student col-3 mt-2">Etudiant d'Amiens ?</p>
       </div>
+        <div class="footer_img d-flex justify-content-end">
+        <img src="assets/img/facebook.png" alt="facebook" class="responsive mr-1">
+        <img src="assets/img/instagram-sketched.png" alt="instagram" class="responsive mr-1">
+        <img src="assets/img/linkedin.png" alt="linkedin" class="responsive mr-1">
+        <img src="assets/img/twitter.png" alt="twitter" class="responsive mr-1 pr-4">
+      </div>
+    </div>
+  </div>
     </footer>
     <!-- Footer -->
-</div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -3,182 +3,191 @@
 <head>
   <meta charset="utf-8">
   <!--meta for responsive design-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OpenYourArt</title>
   <!-- Bootstrap link. -->
-  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!-- Boostrap link (fin). -->
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
   <header>
     <div class="container-fluid header_container">
-      <div class="row header_row flex-column">
-        <div class="header_img d-flex justify-content-end">
-        <img src="assets/img/facebook.png" alt="facebook" class="responsive mr-1">
-        <img src="assets/img/instagram-sketched.png" alt="instagram" class="responsive mr-1">
-        <img src="assets/img/linkedin.png" alt="linkedin" class="responsive mr-1">
-        <img src="assets/img/twitter.png" alt="twitter" class="responsive mr-1 pr-4">
-        </div>
+      <div class="row header_row justify-content-between">
+        <div class="title_site">
+      <p>OPENYOURART</p>
+    </div>
+      <div class= "user_area">
+      <img src="assets/img/search.svg" alt="search_bar" class="responsive" style="width: 20px; height:20px;">
+      <p class="search mr-2 mt-1 ml-1">Recherche</p>
+      <img src= "assets/img/profil.svg" alt="user" class="responsive" style="width:25px; height:25px;">
+      <p class="artists_connection mt-1 ml-1 mr-4">Artistes</p>
+    </div>
       </div>
     </div>
-</header>
-<!-- Début de la NavBar-->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbars" aria-expanded="true" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-		  </button>
+  <!-- Début de la NavBar-->
+  <nav class="navbar navbar-expand-lg">
     <div class="collapse navbar-collapse" id="navbar">
-     <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown megamenu-li">
-       <a class="nav-link dropdown-toggle" href="" id="painting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Peinture</a>
-       <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
-        <div class="row">
-         <div class="col-sm-6 col-lg-3">
-          <h5 href="#">Toutes les peintures</h5>
-          <a class="dropdown-item" href="#">Abstrait</a>
-          <a class="dropdown-item" href="#">Pop Art</a>
-          <a class="dropdown-item" href="#">Street Art</a>
-          <a class="dropdown-item" href="#">Peinture à l'huile</a>
-          <a class="dropdown-item" href="#">Acrylique</a>
-          <a class="dropdown-item" href="#">Technique mixte</a>
-          <a class="dropdown-item" href="#">Trompe l'oeil</a>
-          <a class="dropdown-item" href="#">Surréalisme</a>
-          <a class="dropdown-item" href="#">Impressionniste</a>
-          <a class="dropdown-item" href="#">Cubisme</a>
-          <a class="dropdown-item" href="#">Réalisme</a>
-         </div>
-         <div class="col-sm-6 col-lg-3">
-          <h5 href="#">Tous les thèmes </h5>
-          <a class="dropdown-item" href="#">Nature</a>
-          <a class="dropdown-item" href="#">Urbain</a>
-          <a class="dropdown-item" href="#">Paysage</a>
-          <a class="dropdown-item" href="#">Portrait</a>
-          <a class="dropdown-item" href="#">Nature Morte</a>
-          <a class="dropdown-item" href="#">Fantastique</a>
-          <a class="dropdown-item" href="#">Scéne</a>
-         </div>
-         <div class="col-sm-6 col-lg-3">
-          <h5>Citation</h5>
-          <p>"La peinture est la face visible de l'iceberg de ma pensée."</p>
-          <p>Salvador DALI</p>
-         </div>
-         <div class="col-sm-6 col-lg-3">
-          <h5>Image</h5>
-          <img src="https://source.unsplash.com/250x150/?sig=4" alt="..." style="width: 100%;">
-         </div>
-        </div>
-       </div>
-      </li>
-      <li class="nav-item dropdown megamenu-li">
-       <a class="nav-link dropdown-toggle" href="" id="photography" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Photographie</a>
-       <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
-         <div class="row">
-          <div class="col-sm-6 col-lg-3">
-           <h5 href="#">Toutes les photographies</h5>
-           <a class="dropdown-item" href="#">Noir et Blanc</a>
-           <a class="dropdown-item" href="#">Colorée</a>
-           <a class="dropdown-item" href="#">Abstrait</a>
-           <a class="dropdown-item" href="#">Surréaliste</a>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown megamenu-li">
+          <a class="nav-link dropdown-toggle" href="" id="painting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Peinture</a>
+          <div class="dropdown-menu megamenu" aria-labelledby="dropdown01">
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <h5 href="#">Toutes les peintures</h5>
+                <a class="dropdown-item" href="#">Abstrait</a>
+                <a class="dropdown-item" href="#">Pop Art</a>
+                <a class="dropdown-item" href="#">Street Art</a>
+                <a class="dropdown-item" href="#">Peinture à l'huile</a>
+                <a class="dropdown-item" href="#">Acrylique</a>
+                <a class="dropdown-item" href="#">Technique mixte</a>
+                <a class="dropdown-item" href="#">Trompe l'oeil</a>
+                <a class="dropdown-item" href="#">Surréalisme</a>
+                <a class="dropdown-item" href="#">Impressionniste</a>
+                <a class="dropdown-item" href="#">Cubisme</a>
+                <a class="dropdown-item" href="#">Réalisme</a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <h5 href="#">Tous les thèmes </h5>
+                <a class="dropdown-item" href="#">Nature</a>
+                <a class="dropdown-item" href="#">Urbain</a>
+                <a class="dropdown-item" href="#">Paysage</a>
+                <a class="dropdown-item" href="#">Portrait</a>
+                <a class="dropdown-item" href="#">Nature Morte</a>
+                <a class="dropdown-item" href="#">Fantastique</a>
+                <a class="dropdown-item" href="#">Scéne</a>
+              </div>
+              <div class="col-md-12 col-lg-6 actuality">
+                <div class="popular_works">
+                  <h5>Dernières peintures</h5>
+                  <img src="assets/img/peinture.jpg" alt="peintre" style="width: 150px; height:150px;">
+                  <img src="assets/img/peinture.jpg" alt="..." class="custom_popular_work"style="width: 150px; height:150px;">
+                  <img src="assets/img/peinture.jpg" alt="..." style="width: 150px; height:150px;">
+                </div>
+                <div class="popular_artists">
+                  <h5>Peintres en vogue </h5>
+                  <img src="assets/img/photographie.jpg" alt="..." style="width: 150px; height:150px;">
+                  <img src="assets/img/photographie.jpg" alt="..." class="custom_popular_work"style="width: 150px; height:150px;">
+                  <img src="assets/img/photographie.jpg" alt="..." style="width: 150px; height:150px;">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-6 col-lg-3">
-           <h5 href="#">Tous les thèmes </h5>
-           <a class="dropdown-item" href="#">Nature</a>
-           <a class="dropdown-item" href="#">Insolite</a>
-           <a class="dropdown-item" href="#">Paysage</a>
-           <a class="dropdown-item" href="#">Portrait</a>
-           <a class="dropdown-item" href="#">Documentaire</a>
-           <a class="dropdown-item" href="#">Urbain</a>
-           <a class="dropdown-item" href="#">Scéne</a>
+        </li>
+        <li class="nav-item dropdown megamenu-li">
+          <a class="nav-link dropdown-toggle" href="" id="photography" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Photographie</a>
+          <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <h5 href="#">Toutes les photographies</h5>
+                <a class="dropdown-item" href="#">Noir et Blanc</a>
+                <a class="dropdown-item" href="#">Colorée</a>
+                <a class="dropdown-item" href="#">Abstrait</a>
+                <a class="dropdown-item" href="#">Surréaliste</a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <h5 href="#">Tous les thèmes </h5>
+                <a class="dropdown-item" href="#">Nature</a>
+                <a class="dropdown-item" href="#">Insolite</a>
+                <a class="dropdown-item" href="#">Paysage</a>
+                <a class="dropdown-item" href="#">Portrait</a>
+                <a class="dropdown-item" href="#">Documentaire</a>
+                <a class="dropdown-item" href="#">Urbain</a>
+                <a class="dropdown-item" href="#">Scéne</a>
+              </div>
+              <div class="col-md-12 col-lg-6 actuality">
+                <div class="popular_works">
+                  <h5>Dernières photographies</h5>
+                  <img src="assets/img/photographie.jpg" alt="photographie" style="width: 150px; height:150px;">
+                  <img src="assets/img/photographie.jpg" alt="photographie" class="custom_popular_work"style="width: 150px; height:150px;">
+                  <img src="assets/img/photographie.jpg" alt="photographie" style="width: 150px; height:150px;">
+                </div>
+                <div class="popular_artists">
+                  <h5>Photographes en vogue </h5>
+                  <img src="assets/img/photographie.jpg" alt="photographie" style="width: 150px; height:150px;">
+                  <img src="assets/img/photographie.jpg" alt="photographie" class="custom_popular_work"style="width: 150px; height:150px;">
+                  <img src="assets/img/photographie.jpg" alt="photographie" style="width: 150px; height:150px;">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-12 col-lg-6 actuality">
-            <div class="popular_works">
-           <h5>Dernières photographies</h5>
-           <img src="assets/img/photographie.jpg" alt="photographie" style="width: 150px; height:150px;">
-           <img src="assets/img/photographie.jpg" alt="photographie" class="custom_popular_work"style="width: 150px; height:150px;">
-           <img src="assets/img/photographie.jpg" alt="photographie" style="width: 150px; height:150px;">
-         </div>
-           <div class="popular_artists">
-           <h5>Photographes en vogue </h5>
-           <img src="assets/img/photographie.jpg" alt="photographie" style="width: 150px; height:150px;">
-           <img src="assets/img/photographie.jpg" alt="photographie" class="custom_popular_work"style="width: 150px; height:150px;">
-           <img src="assets/img/photographie.jpg" alt="photographie" style="width: 150px; height:150px;">
-         </div>
+        </li>
+        <li class="nav-item dropdown megamenu-li">
+          <a class="nav-link dropdown-toggle" href="" id="drawing" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dessin</a>
+          <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <h5>Toutes les dessins</h5>
+                <a class="dropdown-item" href="#">Dessin</a>
+                <a class="dropdown-item" href="#">Encre sur papier</a>
+                <a class="dropdown-item" href="#">Collage</a>
+                <a class="dropdown-item" href="#">Pastel</a>
+                <a class="dropdown-item" href="#">Technique Mixte</a>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <h5 href= "#">Tous les thèmes</h5>
+                <a class="dropdown-item" href="#">Nature</a>
+                <a class="dropdown-item" href="#">Insolite</a>
+                <a class="dropdown-item" href="#">Paysage</a>
+                <a class="dropdown-item" href="#">Portrait</a>
+                <a class="dropdown-item" href="#">Documentaire</a>
+                <a class="dropdown-item" href="#">Urbain</a>
+                <a class="dropdown-item" href="#">Scéne</a>
+              </div>
+              <div class="col-md-12 col-lg-6 actuality">
+                <div class="popular_works">
+                  <h5>Derniers dessins</h5>
+                  <img src="assets/img/dessin.png" alt="..." style="width: 150px; height:150px;">
+                  <img src="assets/img/dessin.png"alt="..." class="custom_popular_work"style="width: 150px; height:150px;">
+                  <img src="assets/img/dessin.png" alt="..." style="width: 150px; height:150px;">
+                </div>
+                <div class="popular_artists">
+                  <h5>Dessinateur en vogue </h5>
+                  <img src="assets/img/dessin.png" alt="..." style="width: 150px; height:150px;">
+                  <img src="assets/img/dessin.png" alt="..." class="custom_popular_work"style="width: 150px; height:150px;">
+                  <img src="assets/img/dessin.png" alt="..." style="width: 150px; height:150px;">
+                </div>
+              </div>
+            </div>
           </div>
-         </div>
-       </div>
-      </li>
-      <li class="nav-item dropdown megamenu-li">
-       <a class="nav-link dropdown-toggle" href="" id="photography" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dessin</a>
-       <div class="dropdown-menu megamenu" aria-labelledby="dropdown02">
-         <div class="row">
-          <div class="col-sm-6 col-lg-3">
-           <h5>Toutes les dessins</h5>
-           <a class="dropdown-item" href="#">Dessin</a>
-           <a class="dropdown-item" href="#">Encre sur papier</a>
-           <a class="dropdown-item" href="#">Collage</a>
-           <a class="dropdown-item" href="#">Pastel</a>
-           <a class="dropdown-item" href="#">Technique Mixte</a>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-           <h5 href= "#">Tous les thèmes</h5>
-           <a class="dropdown-item" href="#">Nature</a>
-           <a class="dropdown-item" href="#">Insolite</a>
-           <a class="dropdown-item" href="#">Paysage</a>
-           <a class="dropdown-item" href="#">Portrait</a>
-           <a class="dropdown-item" href="#">Documentaire</a>
-           <a class="dropdown-item" href="#">Urbain</a>
-           <a class="dropdown-item" href="#">Scéne</a>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-           <h5>Citation</h5>
-           <p>"J'ai mis toute ma vie à savoir dessiner comme un enfant."</p>
-           <p>Pablo Picasso</p>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-           <h5>Image</h5>
-           <img src="" alt="dessin" style="width: 100%;">
-          </div>
-         </div>
-       </div>
-      </li>
-     </ul>
+        </li>
+      </ul>
     </div>
-   </nav>
-    <!-- Début jumbotron -->
-    <div class="card card-image">
-      <div class="text-black text-center py-5 px-4">
-        <div class="py-5">
-          <!-- Content -->
-          <h1 class="card-title h2 my-4 py-2">OpenYourArt</h1>
-          <p class="mb-4 pb-2 px-md-5 mx-md-5">"La définition d’une oeuvre d’art ne saurait être autre que celle-ci : Une oeuvre d’art est un coin de la création vu à travers un tempérament.".</p>
-          <p class="mb-4 pb-2 px-md-5 mx-md-5">- Emile Zola -</p>
-          <p>OpenYourArt travaille avec les jeunes artistes Amiénois. Tous étudiants, leurs talents sera vous transportez vers votre passion : l'art</p>
-        </div>
+  </nav>
+  </header>
+  <!-- Début jumbotron -->
+  <div class="card card-image">
+    <div class="text-black text-center py-5 px-4">
+      <div class="py-5">
+        <!-- Content -->
+        <h1 class="card-title h2 my-4 py-2">OpenYourArt</h1>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5">"La définition d’une oeuvre d’art ne saurait être autre que celle-ci : Une oeuvre d’art est un coin de la création vu à travers un tempérament.".</p>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5">- Emile Zola -</p>
+        <p>OpenYourArt travaille avec les jeunes artistes Amiénois. Tous étudiants, leurs talents sera vous transportez vers votre passion : l'art</p>
       </div>
     </div>
-    <div class="card card-image">
-      <div class="text-black text-center py-5 px-4">
-        <div class="py-5">
-          <!-- Content -->
-          <h1 class="card-title h2 my-4 py-2">OpenYourArt</h1>
-          <p class="mb-4 pb-2 px-md-5 mx-md-5">"La définition d’une oeuvre d’art ne saurait être autre que celle-ci : Une oeuvre d’art est un coin de la création vu à travers un tempérament.".</p>
-          <p class="mb-4 pb-2 px-md-5 mx-md-5">- Emile Zola -</p>
-          <p>OpenYourArt travaille avec les jeunes artistes Amiénois. Tous étudiants, leurs talents sera vous transportez vers votre passion : l'art</p>
-        </div>
+  </div>
+  <div class="card card-image">
+    <div class="text-black text-center py-5 px-4">
+      <div class="py-5">
+        <!-- Content -->
+        <h1 class="card-title h2 my-4 py-2">OpenYourArt</h1>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5">"La définition d’une oeuvre d’art ne saurait être autre que celle-ci : Une oeuvre d’art est un coin de la création vu à travers un tempérament.".</p>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5">- Emile Zola -</p>
+        <p>OpenYourArt travaille avec les jeunes artistes Amiénois. Tous étudiants, leurs talents sera vous transportez vers votre passion : l'art</p>
       </div>
     </div>
-    <div class="card card-image">
-      <div class="text-black text-center py-5 px-4">
-        <div class="py-5">
-          <!-- Content -->
-          <h1 class="card-title h2 my-4 py-2">OpenYourArt</h1>
-          <p class="mb-4 pb-2 px-md-5 mx-md-5">"La définition d’une oeuvre d’art ne saurait être autre que celle-ci : Une oeuvre d’art est un coin de la création vu à travers un tempérament.".</p>
-          <p class="mb-4 pb-2 px-md-5 mx-md-5">- Emile Zola -</p>
-          <p>OpenYourArt travaille avec les jeunes artistes Amiénois. Tous étudiants, leurs talents sera vous transportez vers votre passion : l'art</p>
-        </div>
+  </div>
+  <div class="card card-image">
+    <div class="text-black text-center py-5 px-4">
+      <div class="py-5">
+        <!-- Content -->
+        <h1 class="card-title h2 my-4 py-2">OpenYourArt</h1>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5">"La définition d’une oeuvre d’art ne saurait être autre que celle-ci : Une oeuvre d’art est un coin de la création vu à travers un tempérament.".</p>
+        <p class="mb-4 pb-2 px-md-5 mx-md-5">- Emile Zola -</p>
+        <p>OpenYourArt travaille avec les jeunes artistes Amiénois. Tous étudiants, leurs talents sera vous transportez vers votre passion : l'art</p>
       </div>
+    </div>
     <!-- Fin Jumbotron -->
     <!-- Street Galerie  -->
     <!--Début des cards  -->
@@ -189,28 +198,28 @@
     <footer>
       <div class="container-fluid footer_container">
         <div class="row footer_row flex-column">
-      <div class="references d-flex flex-row justify-content-center flex-wrap">
-          <p class="service col-lg-3 col-md-6 mt-2">Mentions légales</p>
-          <p class="aboutUs col-lg-3 col-md-6 mr-2 ml-2 mt-2">Nous sommes</p>
-          <p class="student col-lg-3 col-md-6 mt-2">Etudiant d'Amiens ?</p>
+          <div class="references d-flex flex-row justify-content-center flex-wrap">
+            <p class="service col-lg-3 col-md-6 mt-2">Mentions légales</p>
+            <p class="aboutUs col-lg-3 col-md-6 mr-2 ml-2 mt-2">Nous sommes</p>
+            <p class="student col-lg-3 col-md-6 mt-2">Etudiant d'Amiens ?</p>
+          </div>
+          <div class="footer_img d-flex justify-content-end">
+            <img src="assets/img/facebook.png" alt="facebook" class="responsive mr-1">
+            <img src="assets/img/instagram-sketched.png" alt="instagram" class="responsive mr-1">
+            <img src="assets/img/linkedin.png" alt="linkedin" class="responsive mr-1">
+            <img src="assets/img/twitter.png" alt="twitter" class="responsive mr-1 pr-4">
+          </div>
+        </div>
       </div>
-        <div class="footer_img d-flex justify-content-end">
-        <img src="assets/img/facebook.png" alt="facebook" class="responsive mr-1">
-        <img src="assets/img/instagram-sketched.png" alt="instagram" class="responsive mr-1">
-        <img src="assets/img/linkedin.png" alt="linkedin" class="responsive mr-1">
-        <img src="assets/img/twitter.png" alt="twitter" class="responsive mr-1 pr-4">
-      </div>
-    </div>
-  </div>
     </footer>
     <!-- Footer -->
     <script src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 
     <!-- Required scripts for Bootstrap -->
-    	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-</body>
-</html>
+  </body>
+  </html>

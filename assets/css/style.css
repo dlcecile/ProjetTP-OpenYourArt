@@ -1,58 +1,43 @@
-
-/* Fébut header */
 header{
-/* Pour fixer mon header au scroll */
-position: fixed;
- z-index: 999;
- /* La largueur totale du header à 100% du header_container et de la navbar */
- width: 100%;
+  background-color: black;
 }
-.header_container{
-  background-color:black;
-  color: white;
-  border: 1px solid red;
-}
-/* FIn header */
 /*Début Barre de Navigation  */
-.navbar {
+.megamenu-li {
+  position: static;
+}
+.megamenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  border: 1px solid black;
+  width: 80%;
+}
+.navbar{
   background: -moz-linear-gradient(top, #f3e2c7 0%, #c19e67 50%, #b68d4c 51%, #e9d4b3 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */;
+  background: -webkit-linear-gradient(top, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* Chrome10-25,Safari5.1-6 */ */
+  background: linear-gradient(to bottom, #f3e2c7 0%,#c19e67 50%,#b68d4c 51%,#e9d4b3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */; */
   list-style-type: none;
-  justify-content: space-around;
-  max-height: 50px;
-   width: 100%;
-/* La barre à une largueur totale par rapport au container */
 }
-.nav-link {
-  color: #0B223B;
-  text-shadow: #c19e67 0.2em 0.2em 0.3em;
-  font-size: 1.2rem;
-}
-.fa-bars{
-  color: #0B223B;
-  text-shadow: #0B223B.2em 0.2em 0.3em;
+.actuality{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
 }
 
-/* Au survol de la souris le lien change couleur */
-nav a:hover{
-  color:#0A5DBB;
-}
+
 /*Fin Barre de Navigation  */
 /* Début Jumbotron */
-.card-image{
-  background-image: url();
-  background-repeat: no-repeat;
 
-}
 /* Fin Jumbotron */
-
-/* Fin card Les nouveautés */
 /* Footer */
 .footer_container{
-background-color:black;
-color: white;
+  background-color:black;
+  color: white;
+  padding: 0;
+  border: 1px solid red;
 }
 .service, .aboutUs, .student{
   text-align:center;

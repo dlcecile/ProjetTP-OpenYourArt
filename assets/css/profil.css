@@ -1,0 +1,46 @@
+section
+{
+  border: 4px solid red;
+  -webkit-column-count:2 ; /* Opera, Safari, Google Chrome */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2; /* Internet Explorer */
+  /* Pour séparer les colonnes */
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  /* Pour la place laisser au texte */
+  -webkit-columns: 2 70vh;
+    -moz-columns: 2 70vh;
+    columns: 2 70vh;
+}
+section h2
+{
+  break-before: column;
+  -webkit-column-break-before: always;
+}
+aside{
+  border:4px solid green;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+.profils_row{
+  border:4px solid purple;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.profils_container{
+  border:8px solid green;
+  /* margin-top: -3vh; */
+}
+.profils_photo{
+   object-fit: contain;
+   width: 40vh;
+   height: 40vh;
+}
+/* ======================================= */
+/* JUmbotron profils */
+.jumbotron-fluid{
+  border:6px solid yellow;
+}

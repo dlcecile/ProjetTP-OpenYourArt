@@ -40,7 +40,17 @@ aside{
    height: 40vh;
 }
 /* ======================================= */
-/* JUmbotron profils */
+/* Jumbotron profils */
 .jumbotron-fluid{
   border:6px solid yellow;
+}
+/* Books */
+
+.img_profils_books{
+  border:1px solid black;
+  width: 100%;
+max-width: 30vh;
+height: auto;
+margin:1vh;
+
 }

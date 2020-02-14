@@ -10,8 +10,8 @@ section
   column-gap: 50px;
   /* Pour la place laisser au texte */
   -webkit-columns: 2 70vh;
-    -moz-columns: 2 70vh;
-    columns: 2 70vh;
+  -moz-columns: 2 70vh;
+  columns: 2 70vh;
 }
 section h2
 {
@@ -35,9 +35,9 @@ aside{
   /* margin-top: -3vh; */
 }
 .profils_photo{
-   object-fit: contain;
-   width: 40vh;
-   height: 40vh;
+  object-fit: contain;
+  width: 40vh;
+  height: 40vh;
 }
 /* ======================================= */
 /* Jumbotron profils */
@@ -45,12 +45,31 @@ aside{
   border:6px solid yellow;
 }
 /* Books */
+.books_row{
+  border: 4px solid purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frame_img{
+  border: 4px solid pink;
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  justify-content: space-around;
 
+}
 .img_profils_books{
-  border:1px solid black;
+  border:2px solid orange;
   width: 100%;
-max-width: 30vh;
-height: auto;
-margin:1vh;
-
+  max-width: 30vh;
+  height: auto;
+  max-height: 80vh;
+  margin:1vh;
+  padding:1vh;
+}
+figure{
+  display: flex;
+  flex-direction:column;
+  border:5px solid black;
 }

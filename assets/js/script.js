@@ -4,3 +4,11 @@ $(document).ready(function() {
 	});
 });
 // ====================================
+$(document).ready(function(){
+  $("img").mouseover(function(){
+    $("a").css("display", "block");
+  });
+  $("img").mouseout(function(){
+    $("a").css("display", "none");
+  });
+});

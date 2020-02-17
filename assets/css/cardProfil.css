@@ -11,14 +11,16 @@
   top:20vh;
   left:10vh;
   width: 50%;
+  color:black;
+  background: linear-gradient( #c3aa5b, white);
+  font-size: 2vh;
+  display:none;
   background-color: #c3aa5b;
   color:black;
   background: linear-gradient( #c3aa5b, white);
   font-size: 2vh;
 }
-a:hover{
-  color:white;
-}
+
 .badge{
   background-color: #c3aa5b;
   color:black;
@@ -37,7 +39,7 @@ a:hover{
 }
 .card-img-bottom{
     border-radius: 2vh;
-    object-fit:fill;
+    object-fit:cover;
     margin-top:-5vh;
     width: 26rem;
     height:20rem;
@@ -73,8 +75,8 @@ filter: grayscale(100%); /* Firefox */
   .card{
     border-radius: 3vh;
     margin-right:1vh;
-    max-width: 23rem;
-    max-height:28rem;
+    width: 23rem;
+    height:28rem;
     overflow: hidden;
     margin:1vh;
     background-color: #020a14;
@@ -85,6 +87,22 @@ filter: grayscale(100%); /* Firefox */
       border-radius: 2vh;
       object-fit:fill;
       margin-top:-5vh;
+  }
+.btn{
+  display:block;
+}
+}
+@media screen and (max-width: 500px){
+  .btn{
+    border-radius: 3vh;
+    position: relative;
+    top:20vh;
+    left:10vh;
+    width: 50%;
+    color:black;
+    background: linear-gradient( #c3aa5b, white);
+    font-size: 2.2vh;
+    display:block;
       width: 22rem;
       height:25rem;
   }

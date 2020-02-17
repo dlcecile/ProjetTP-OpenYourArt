@@ -15,7 +15,12 @@
   background: linear-gradient( #c3aa5b, white);
   font-size: 2vh;
   display:none;
+  background-color: #c3aa5b;
+  color:black;
+  background: linear-gradient( #c3aa5b, white);
+  font-size: 2vh;
 }
+
 .badge{
   background-color: #c3aa5b;
   color:black;
@@ -24,8 +29,6 @@
 .card{
   border-radius: 3vh;
   margin-right:1vh;
-  max-width: 26rem;
-  max-height:28rem;
   width: 26rem;
   height:28rem;
   overflow: hidden;
@@ -84,8 +87,6 @@ filter: grayscale(100%); /* Firefox */
       border-radius: 2vh;
       object-fit:fill;
       margin-top:-5vh;
-      /* width: 23rem;
-      height:28rem; */
   }
 .btn{
   display:block;
@@ -102,5 +103,7 @@ filter: grayscale(100%); /* Firefox */
     background: linear-gradient( #c3aa5b, white);
     font-size: 2.2vh;
     display:block;
+      width: 22rem;
+      height:25rem;
   }
 }

@@ -96,14 +96,13 @@ filter: grayscale(100%); /* Firefox */
   .btn{
     border-radius: 3vh;
     position: relative;
-    top:20vh;
-    left:10vh;
+    top:30vh;
+    left:14vh;
     width: 50%;
     color:black;
     background: linear-gradient( #c3aa5b, white);
-    font-size: 2.2vh;
+    font-size: 3vh;
     display:block;
-      width: 22rem;
-      height:25rem;
+
   }
 }

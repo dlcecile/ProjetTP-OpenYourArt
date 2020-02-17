@@ -1,0 +1,21 @@
+img {
+  /* Reglage de la taille des images */
+  width: 30%;
+}
+#modal {
+  /* Léger zoom sur la modal pour la rendre plus grande */
+  transform: scale(1.3);
+}
+#modal .modal-body {
+  /* La taille du corps de la modal s'adapte à la taille de l'image */
+  height: auto;
+}
+#modalImage {
+  /* Fait en sorte que l'image prenne toute la largeur de la modal */
+  width: 100%;
+}
+.btn{
+position: absolute;
+bottom:10vh;
+right:10vh;
+}

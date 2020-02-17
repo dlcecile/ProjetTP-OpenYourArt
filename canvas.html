@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <!--meta for responsive design-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenYourArt</title>
+  <!-- Bootstrap link. -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Boostrap link (fin). -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/canvas.css">
+</head>
+<body>
+<div class="container-fluid container_canvas">
+  <div class="row row-canvas">
+    <div class="onOverview">
+      <!-- Première image -->
+    <img id="image1" src="https://media.overstockart.com/optimized/cache/data/product_images/VG485-1000x1000.jpg" alt="Painting 1">
+
+  <!-- Modal caché -->
+  <div class="modal" id="modal" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <!-- Image vide en attente de lien -->
+          <img id="modalImage" src="" alt="empty">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="linkingToBuy">
+      <p>Prix €</p>
+      <p>Contacter le vendeur</p>
+
+      </div>
+    </div>
+  </div>
+  <!-- Boostrap et Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Fichier de script Js  -->
+  <script src="assets/js/canvas.js"> </script>
+
+  </body>
+  </html>

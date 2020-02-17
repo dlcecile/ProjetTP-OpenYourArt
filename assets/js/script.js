@@ -5,12 +5,12 @@ $(document).ready(function() {
 });
 // ====================================
 $(document).ready(function(){
+	$(".card").mouseout(function(){
+		$(".btn").hide();
+			});
   $(".card").mouseover(function(){
     $(".btn").show();
   });
-  $(".card").mouseout(function(){
-    $(".btn").hide();
-		  });
 	$(".btn").mouseover(function(){
 		$(".btn").css({"background": "#BB0408", "color": "white"});
 	});

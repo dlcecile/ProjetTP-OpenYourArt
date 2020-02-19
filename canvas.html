@@ -11,31 +11,40 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/canvas.css">
 </head>
 <body>
-<div class="container-fluid container_canvas">
-  <div class="row row-canvas">
-    <div class="onOverview">
-      <!-- Première image -->
-    <img id="image1" src="https://media.overstockart.com/optimized/cache/data/product_images/VG485-1000x1000.jpg" alt="Painting 1">
-
-  <!-- Modal caché -->
-  <div class="modal" id="modal" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-body p-0">
-          <!-- Image vide en attente de lien -->
-          <img id="modalImage" src="" alt="empty">
-          <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+  <div class="container-fluid container_canvas">
+    <div class="row row-canvas">
+      <div class="onOverview">
+        <!-- Première image -->
+        <div class="frameGalerie">
+          <img id="image1" class="responsive" src="assets/img/photo1.jpg" alt="Painting 1">
         </div>
-
+        <!-- Modal caché -->
+        <div class="modal" id="modal" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-body p-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- Image vide en attente de lien -->
+                <img id="modalImage" src="" alt="empty">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linkingToBuy">
+        <h2 class="nameArtists">Nom de l'artiste</h2>
+        <p class="nameArtWork">Nom de l'oeuvre</p>
+        <p class="Artisticcategory">Peinture</p>
+        <p class="dimension">L*H cm</p>
+        <p class="prix">Prix euros</p>
+        <a class="btn btn-dark" href="">Contacter l'artiste</a>
       </div>
     </div>
   </div>
-    </div>
-    <div class="linkingToBuy">
-      <p>Prix €</p>
-      <p>Contacter le vendeur</p>
-
-      </div>
+  <div class="container-fluid container_canvas">
+    <div class="row row-canvas">
     </div>
   </div>
   <!-- Boostrap et Jquery -->
@@ -45,5 +54,5 @@
   <!-- Fichier de script Js  -->
   <script src="assets/js/canvas.js"> </script>
 
-  </body>
-  </html>
+</body>
+</html>

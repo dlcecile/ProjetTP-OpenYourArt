@@ -4,10 +4,12 @@
 }
 /* ==========Oeuvre=============== */
 .frameGalerie {
-  border: 2px solid red;
+  border: 4px solid #c3aa5b;
 /* Mettre la hauteur et la largueur sur le cadre de l'image */
   width: 60vh;
   height: 60vh;
+  padding:1vh;
+  margin-right: 2vh;
 }
 /* Afficher l'image en mode zoom */
 img {
@@ -40,12 +42,44 @@ img {
 .row-canvas{
   display: flex;
   flex-direction:row;
-  border:2px solid red;
+  flex-wrap: wrap;
+  /* border:2px solid red; */
 }
 .onOverview{
-  width: 70%;
-  border:2px solid purple;
+  width: 50%;
+  /* border:2px solid purple; */
   display:flex;
   flex-direction: column;
-align-items: center;
+align-items: flex-end;
+background-color: white;
+border-right: 2px dashed black;
+}
+.linkingToBuy{
+  width: 50%;
+  background-color:white;
+  color:black;
+  display:flex;
+  flex-direction:column;
+  align-items: left;
+  justify-content: flex-end;
+  text-align: left;
+}
+.nameArtists{
+  font-size: 5vh;
+  margin-left: 2vh;
+}
+.description{
+  font-size:2.7vh;
+  max-width: 35vh;
+  padding: 1rem;
+  color: black;
+  border-width: 4px;
+  border-style: solid;
+  border-image:linear-gradient(to bottom,#c3aa5b,rgba(0, 0, 0, 0)) 1 100%;
+z-index:2;
+background-color: rgba(0, 0, 0, 0.1);
+line-height: 2px;
+margin-left: 2vh;
+text-align: center;
+
 }

@@ -21,9 +21,9 @@ $(function(){
 // setInterval("clignotement()", 100);
 $(document).ready(function(){
 	$(".btn").mouseover(function(){
-		$(".btn").css({"background": "#BB0408", "color": "white"});
+		$(this).css({"background": "#BB0408", "color": "white"});
 	});
 	$(".btn").mouseout(function(){
-		$(".btn").css({"background": " linear-gradient( #c3aa5b, white)", "color": "black"});
+		$(this).css({"background": " linear-gradient( #c3aa5b, white)", "color": "black"});
 	});
 });

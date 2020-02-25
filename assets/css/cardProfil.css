@@ -10,16 +10,12 @@
   border-radius: 3vh;
   position: relative;
   top:20vh;
-  left:10vh;
-  width: 50%;
+  left:5vh;
+  width: 80%;
   color:black;
   background: linear-gradient( #c3aa5b, white);
   font-size: 2vh;
   display:none;
-  background-color: #c3aa5b;
-  color:black;
-  background: linear-gradient( #c3aa5b, white);
-  font-size: 2vh;
 }
 
 .badge{
@@ -59,7 +55,7 @@
     border-radius:50px;
     width:10vh;
     height:10vh;
-    object-fit:fill;
+    object-fit:cover;
     margin-right:2vh;
     -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
 filter: grayscale(100%); /* Firefox */
@@ -98,8 +94,8 @@ filter: grayscale(100%); /* Firefox */
     border-radius: 3vh;
     position: relative;
     top:30vh;
-    left:14vh;
-    width: 50%;
+    left:4vh;
+    width: 80%;
     color:black;
     background: linear-gradient( #c3aa5b, white);
     font-size: 3vh;

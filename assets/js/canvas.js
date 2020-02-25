@@ -9,3 +9,21 @@ $(function(){
     $('#modal').modal('show');
   })
 });
+
+// ==============================================
+// function clignotement(){
+// if (document.getElementById("price").style.color=="black")
+// document.getElementById("price").style.color="red";
+// else
+// document.getElementById("price").style.color="black";
+// }
+// // mise en place de l appel régulier de la fonction toutes les 0.5 secondes
+// setInterval("clignotement()", 100);
+$(document).ready(function(){
+	$(".btn").mouseover(function(){
+		$(".btn").css({"background": "#BB0408", "color": "white"});
+	});
+	$(".btn").mouseout(function(){
+		$(".btn").css({"background": " linear-gradient( #c3aa5b, white)", "color": "black"});
+	});
+});

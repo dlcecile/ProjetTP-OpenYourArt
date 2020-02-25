@@ -13,7 +13,7 @@
 <body>
   <div class="container-fluid container_canvas">
     <div class="row row-canvas">
-      <div class="onOverview">
+      <div class="onOverview col-md-6">
         <!-- Première image -->
         <div class="picture">
           <img id="image1" class="responsive" src="assets/img/photo1.jpg" alt="Painting 1">
@@ -33,27 +33,67 @@
           </div>
         </div>
       </div>
-      <div class="information">
-        <div class="description">
-        <h2 class="nameArtists">Béatrice Karon</h2>
-        <p class="name_ArtWork">Titre de l'oeuvre</p>
-        <p class="price">200€</p>
-        <p class="artistic_category"><span>Technique:</span> Peinture</p>
-        <p class="dimensions"><span>Dimensions:</span> H50xL70cm</p>
-        <p class="hebergement">Une oeuvre proposée par OPENYOURART</p>
-        <p class="contact">Vous souhaitez acquérir cette oeuvre n'hésitez pas prenez contact avec l'artiste</p>
-        <a href="#" class="btn">Envoyer un message à l'artiste</a>
+      <div class="card card-description col-md-6">
+  <div class="card-headerDescription">
+    <h2 class="nameArtists">Béatrice Karon</h2>
+    <div class="artwork">
+    <p class="name_ArtWork ml-3">Titre de l'oeuvre,je mets en long titre volontairement cela donne quoi</p>
+    <p class="year">, 2009</p>
   </div>
-
+  </div>
+  <div class="card-bodyDescription">
+    <p class="price ml-3">200€</p>
+  <div class="artistic_category ml-3">
+    <p><span>Technique:</span> Peinture</p>
+    <p>: Huile</p>
     </div>
-      </div>
+    <p class="dimensions ml-3"><span>Dimensions:</span> H50xL70cm</p>
+    <p class="finitions ml-3"><span>Support:</span>Toile sur chassis, non encadrée</p>
+    <div class="card-footerDescription">
+    <p class="hebergement ml-3">Une oeuvre proposée par OPENYOURART</p>
+    <p class="contact ml-3">Vous souhaitez acquérir cette oeuvre n'hésitez pas prenez contact avec l'artiste</p>
+    <a href="profil.html" class="btn btnLinking ml-3">Envoyer un message à l'artiste</a>
+  </div>
+  </div>
+</div>
     </div>
+  </div>
+  <!-- A propos de l'oeuvre -->
   <div class="container-fluid container_description">
     <div class="row row-description">
+      <div class="main-Title">
+      <img src="assets/img/portrait.svg" alt="imageZoom" id="imageZoom">
       <h2 class="main">A propos de l'oeuvre</h2>
+    </div>
       <p class="history">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</div>
-</div>
+    </div>
+  </div>
+  <!-- Description détaillé -->
+  <!-- A propos de l'artiste -->
+  <div class="container-fluid horizontaleCardProfil_container">
+    <div class="row horizontaleCardProfil_row">
+      <div class="plug col-md-12">
+             <div class="card cardProfil">
+               <div class="pictureProfil mt-4">
+                     <div class="roundedImage">
+                       <img class="roundedImage" src="assets/img/photo.jpg" alt="avatar"/>
+                     </div>
+                </div>
+                <div class="summary mt-4">
+                 <h4 class="card-title">Portrait de l'artiste</h4>
+                <div class="citation">
+                 <img src="assets/img/guillemets.svg" alt="icoGuillemts" class="guillemets mr-2">
+                 <p class="card-text">Citation qui correspond à l'artiste, et si elle est utltra longue cela donne quoi</p>
+                  <img src="assets/img/guillemets.svg" alt="icoGuillemts" class="guillemets ml-2">
+                </div>
+               </div>
+             </div>
+               <div class="card-footerProfil">
+                    <a href="profil.html" class="btn btnCard-footer mt-4"> + Suivre cet artiste</a>
+               </div>
+             </div>
+    </div>
+  </div>
   <!-- Boostrap et Jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

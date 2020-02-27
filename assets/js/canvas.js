@@ -21,7 +21,7 @@ $(function(){
 // setInterval("clignotement()", 100);
 $(document).ready(function(){
 	$(".btn").mouseover(function(){
-		$(this).css({"background": "#BB0408", "color": "white"});
+		$(this).css({"background": "#821921", "color": "white"});
 	});
 	$(".btn").mouseout(function(){
 		$(this).css({"background": " linear-gradient( #c3aa5b, white)", "color": "black"});

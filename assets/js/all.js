@@ -4,9 +4,13 @@
 //  );
 // Au survol opacity de l'image.
 
+//
+// $("img").blowup({
+//     "background" : "#F39C12",
+//     "width" : 250,
+//     "height" : 250
+// })
 
-$("img").blowup({
-    "background" : "#F39C12",
-    "width" : 250,
-    "height" : 250
-})
+$('button').click(function(){
+  $('.secondgallery').toggle()
+});
